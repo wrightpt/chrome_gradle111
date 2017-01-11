@@ -42,6 +42,9 @@ android {
             main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/ui/accessibility/'
             main.java.srcDirs += '/home/c/Downloads/chromium/src/net/android/java/src/'
             main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/net/android/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/device/battery/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/device/vibration/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/mojo/android/system/src/'
         }
     }
     buildTypes {
