@@ -5,10 +5,11 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.c.myapplication"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 23
+        targetSdkVersion 23
         versionCode 1
         versionName "1.0"
+         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
@@ -19,6 +20,28 @@ android {
 
         sourceSets {
             main.java.srcDirs += '/home/c/Downloads/chromium/src/base/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/content/public/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/ui/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/third_party/jsr-305/src/ri/src/main/java/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/content/shell/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/base/org/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/device/gamepad/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/services/ui/public/interfaces/ime/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/third_party/WebKit/public/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/ui/touch_selection/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/content/public/android/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/ui/android/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/content/public/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/content/public/android/Common_aidl/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/third_party/WebKit/public/platform/modules/shapedetection/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/mojo/public/java/system/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/mojo/public/java/bindings/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/mojo/public/interfaces/bindings/org/chromium/mojo/bindings/interfacecontrol'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/services/service_manager/public/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/third_party/WebKit/public/platform/modules/facedetectionprovider/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/ui/accessibility/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/net/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/net/android/'
         }
     }
     buildTypes {
@@ -45,4 +68,5 @@ dependencies {
     compile 'com.android.support:design:25.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.google.android.exoplayer:exoplayer:r2.1.1'
+    compile 'com.android.support:multidex:1.0.1'
 }
