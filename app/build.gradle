@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "com.example.c.myapplication"
-        minSdkVersion 23
+        minSdkVersion 17
         targetSdkVersion 23
         versionCode 1
         versionName "1.0"
@@ -45,6 +45,11 @@ android {
             main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/device/battery/'
             main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/device/vibration/'
             main.java.srcDirs += '/home/c/Downloads/chromium/src/mojo/android/system/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/device/battery/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/device/vibration/android/java/src/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/device/nfc/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/out/Default/gen/services/service_manager/public/interfaces/InterfaceProvider/'
+            main.java.srcDirs += '/home/c/Downloads/chromium/src/device/nfc/android/java/src/'
         }
     }
     buildTypes {
